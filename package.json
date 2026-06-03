@@ -1,0 +1,31 @@
+{
+  "name": "captcha-ocr-tfjs",
+  "version": "1.0.0",
+  "private": false,
+  "description": "TensorFlow.js captcha OCR trainer and inference tools for five-digit captchas using labels 1-9.",
+  "main": "src/ocr.js",
+  "type": "commonjs",
+  "scripts": {
+    "train": "node scripts/train.js",
+    "predict": "node scripts/predict.js",
+    "solve": "node scripts/solve-file.js",
+    "check": "node --check src/dependencies.js && node --check src/image-utils.js && node --check src/ocr.js && node --check src/tf.js && node --check src/tfjs-io.js && node --check scripts/train.js && node --check scripts/predict.js && node --check scripts/solve-file.js && node --check test/smoke.js",
+    "test": "node test/smoke.js"
+  },
+  "keywords": [
+    "captcha",
+    "ocr",
+    "tensorflowjs",
+    "tfjs",
+    "digit-recognition"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs": "4.22.0",
+    "jpeg-js": "0.4.4",
+    "pngjs": "7.0.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

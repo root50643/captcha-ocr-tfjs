@@ -1,0 +1,8 @@
+{
+  "imageSize": 32,
+  "padding": 4,
+  "adaptiveBlockSize": 21,
+  "adaptiveC": 7,
+  "minComponentArea": 3,
+  "segmentCount": 5
+}
